@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #DEE6FD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box{
+    background-color:white;
+    height: 750px;
+    width: 450px;
+    border-radius: 25px;
+    z-index: 10;
+    overflow: hidden;
+}
+.box .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+}
+
+.box .content .order{
+    
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    
+}
+
+.box .content .order > h1{
+    color: hsl(223, 47%, 23%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+
+}
+.box .content .order > p{
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    
+    font-size: 16px;
+}
+
+.box .content .plan{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 85px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.box .content .plan .inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+
+.box .content .plan .inner .price>h5{
+    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+}
+.box .content .plan .inner .price>p{
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+.box .content .plan >p{
+    text-decoration: underline;
+    color: rgb(8, 8, 145);
+    font-weight: 700;
+    cursor: pointer;
+}
+.box .content .plan >p:hover{
+    text-decoration: none;
+    color: hsl(239, 59%, 68%);
+}
+.box .content .btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 80%;
+    height: 80px;
+}
+
+.box .content .btn>button{
+    background-color:hsl(245, 75%, 52%);
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+    border : none;
+    border-radius: 14px;
+    width: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.box .content .btn>button:hover{
+    background-color:hsl(239, 59%, 68%);
+}
+
+.box .content .btn>p{
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    cursor: pointer;
+}
+.box .content .btn>p:hover{
+    color: rgb(8, 8, 145);
+}
